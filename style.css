@@ -185,3 +185,34 @@ main {
       main .section--2 button:hover {
         background-color: #000;
         color: #fff; }
+
+footer {
+  background-color: #000;
+  text-align: center;
+  padding: 56px;
+  box-sizing: border-box; }
+  footer .logo {
+    width: 144px;
+    height: 24px;
+    margin-bottom: 32px; }
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px; }
+    footer ul a {
+      color: #fff;
+      font-family: "Alata", sans-serif; }
+  footer .social-medias {
+    margin-top: 48px; }
+    footer .social-medias ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 16px; }
+    footer .social-medias span {
+      font-family: "Alata", sans-serif;
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 15px; }

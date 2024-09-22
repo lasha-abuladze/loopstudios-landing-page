@@ -15,6 +15,7 @@ hamburgerBtn.addEventListener(`click`, () => {
     navigationUl.classList.remove(`display-none`);
     navigationUl.classList.add(`open-menu`);
     navigationUl.classList.remove(`close-menu`);
+    document.body.style.overflow = 'hidden';
     
     closeBtn.classList.toggle(`display-none`);
     hamburgerBtn.classList.toggle(`display-none`);
@@ -30,6 +31,7 @@ hamburgerBtn.addEventListener(`click`, () => {
 closeBtn.addEventListener(`click`, () => {
     navigationUl.classList.remove(`open-menu`);
     navigationUl.classList.add(`close-menu`);
+    document.body.style.overflow = 'auto';
 
     closeBtn.classList.toggle(`display-none`);
     hamburgerBtn.classList.toggle(`display-none`);
