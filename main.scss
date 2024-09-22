@@ -146,16 +146,6 @@ main {
         article {
             text-align: center;
 
-            h2 {
-                font-size: 32px;
-                font-weight: 300;
-                color: #000;
-                font-family: $fontJosefin;
-                text-transform: uppercase;
-                margin-bottom: 16px;
-                line-height: normal;
-            }
-
             p {
                 font-size: 15px;
                 font-weight: 400;
@@ -167,4 +157,135 @@ main {
             }
         }
     }
+
+    .section--2 {
+        margin-top: 96px;
+        text-align: center;
+
+        h2 {
+            font-size: 32px;
+            font-weight: 300;
+            color: #000;
+            font-family: $fontJosefin;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+            line-height: normal;
+        }
+
+        figure {
+
+            width: 100%;
+            height: 120px;
+            position: relative;
+            cursor: pointer;
+            
+            .img-div {
+                height: 100%;
+                background-position: top;
+                background-size: cover;
+            }
+
+            figcaption {
+                position: absolute;
+                font-size: 24px;
+                font-weight: 300;
+                color: #fff;
+                text-transform: uppercase;
+                font-family: $fontJosefin;
+                // bottom: 20px;
+                // left: 20px;
+                top: 0;
+                text-align: left;
+                z-index: 1;
+                width: 100%;
+                height: 100%;
+                transition: all 0.2s;
+
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.75);
+                    color: #000;
+                }
+
+                .fig-main--span {
+                    position: absolute;
+                    left: 24px;
+                    bottom: 24px;
+                }
+
+                span {
+                    display: block;
+                }
+            }
+        }
+
+        .deep-earth {
+            background-image: url(./images/mobile/image-deep-earth.jpg);
+        }
+
+        .night-arcade {
+            background-image: url(./images/mobile/image-night-arcade.jpg);
+        }
+
+        .soccer-teamvr {
+            background-image: url(./images/mobile/image-soccer-team.jpg);
+        }
+
+        .the-grid {
+            background-image: url(./images/mobile/image-grid.jpg);
+        }
+
+        .fromup-abovevr {
+            background-image: url(./images/mobile/image-from-above.jpg);
+        }
+
+        .pocket-boreals {
+            background-image: url(./images/mobile/image-pocket-borealis.jpg);
+        }
+
+        .the-curiosity {
+            background-image: url(./images/mobile/image-curiosity.jpg);
+        }
+
+        .makeit-fisheye {
+            background-image: url(./images/mobile/image-fisheye.jpg);
+        }
+
+        .first-line {
+            @include flex-column();
+            gap: 24px;
+        }
+
+        .seconde-line {
+            margin-top: 24px;
+            @include flex-column();
+            gap: 24px;
+        }
+
+
+        button {
+            width: 157px;
+            height: 48px;
+            color: #000;
+            border: 1px solid #000;
+            background: none;
+            cursor: pointer;
+            margin-top: 34px;
+
+            font-size: 14px;
+            font-weight: 400;
+            font-family: $fontAlata;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            transition: all 0.2s;
+
+            &:hover {
+                background-color: #000;
+                color: #fff;
+            }
+        }
+
+
+    }
+
+
 }
