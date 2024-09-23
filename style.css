@@ -210,9 +210,54 @@ footer {
       flex-direction: row;
       align-items: center;
       justify-content: center;
-      gap: 12px;
-      margin-bottom: 16px; }
+      margin-bottom: 15px; }
     footer .social-medias span {
-      font-family: "Alata", sans-serif;
-      color: rgba(255, 255, 255, 0.5);
-      font-size: 15px; }
+      font-size: 15px;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.5); }
+
+@media only screen and (min-width: 768px) {
+  .header {
+    background-image: url(./images/desktop/image-hero.jpg);
+    background-position: right; }
+    .header .close-open--btn {
+      z-index: 1;
+      display: none; }
+    .header .navigation ul {
+      position: static;
+      background: none;
+      width: fit-content;
+      height: fit-content;
+      padding-top: 0;
+      padding-left: 0;
+      display: flex !important;
+      flex-direction: row;
+      gap: 15px;
+      transition: none; }
+      .header .navigation ul li {
+        transform: translateX(0);
+        transition: none; }
+        .header .navigation ul li a {
+          font-size: 15px;
+          font-weight: 400; }
+    .header h1 {
+      max-width: 400px;
+      margin: auto;
+      font-size: 40px;
+      font-weight: 400;
+      margin-top: 103px;
+      line-height: 50px; }
+  main {
+    padding: 96px 24px;
+    box-sizing: border-box; }
+    main .section--1 .section-hero--img {
+      width: 100%;
+      height: 424px;
+      background-image: url(./images/mobile/image-interactive.jpg); }
+    main .section--1 article {
+      text-align: center; }
+      main .section--1 article h2 {
+        font-size: 32px;
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 300;
+        margin-bottom: 20px; } }

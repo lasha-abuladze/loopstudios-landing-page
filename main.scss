@@ -318,14 +318,13 @@ footer {
         ul {
             @include flex-row();
             justify-content: center;
-            gap: 12px;
-            margin-bottom: 16px;
+            margin-bottom: 15px;
         }
 
         span {
-            font-family: $fontAlata;
-            color: rgba(255, 255, 255, 0.5);
             font-size: 15px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.5);
         }
     }
 
@@ -333,4 +332,90 @@ footer {
 
 
 
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+    .header {
+        background-image: url(./images/desktop/image-hero.jpg);
+        background-position: right;    
+    
+        .close-open--btn {
+            z-index: 1;
+            display: none
+        }
+    
+        .navigation {
+    
+            ul {
+                position: static;
+                background: none;
+                width: fit-content;
+                height: fit-content;
+                padding-top: 0;
+                padding-left: 0;
+    
+                display: flex !important;
+                flex-direction: row;
+                gap: 15px;
+                transition: none;
+                
+    
+                li {
+    
+                    transform: translateX(0);
+                    transition: none;    
+                    a {
+                        font-size: 15px;
+                        font-weight: 400;
+                    }
+                }
+            }        
+        }
+    
+        h1 {
+            max-width: 400px;
+            margin: auto;
+            font-size: 40px;
+            font-weight: 400;
+            margin-top: 103px;
+            line-height: 50px;
+        }
+    
+    
+    
+    
+    }
+
+    main {
+        padding: 96px 24px;
+        box-sizing: border-box;
+    
+        .section--1 {
+    
+            .section-hero--img {
+                width: 100%;
+                height: 424px;
+                background-image: url(./images/mobile/image-interactive.jpg);
+            }
+    
+            article {
+                text-align: center;
+
+                h2 {
+                    font-size: 32px;
+                    font-family: $fontJosefin;
+                    font-weight: 300;
+                    margin-bottom: 20px;
+
+                }
+            }
+        }
+
+    }
+
+
+    
 }
